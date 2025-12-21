@@ -1,0 +1,14 @@
+/* Janela do menu */
+window {
+    border-radius: 5px;
+    border:1px solid #131313;
+    background: linear-gradient(to bottom, rgba(88, 88, 88, 0.9) 0%, rgba(58, 58, 58, 0.9) 50%, rgba(94, 94, 94, 0.9) 100%);
+    color: #ffffff
+}
+
+#input {
+    color: #000000;
+    border-radius: 5px;
+    border:1px solid #131313;
+    background: linear-gradient(to bottom, rgba(212, 212, 212, 0.9), rgba(165, 165, 165, 0.9));
+}

@@ -1,0 +1,18 @@
+/* =========================
+   HICE BASE – GTK 4
+   ========================= */
+
+* {
+    border-radius: 0px;
+}
+
+button,
+entry,
+textview {
+    border-width: 1px;
+}
+
+scrollbar slider {
+    min-width: 8px;
+    min-height: 8px;
+}

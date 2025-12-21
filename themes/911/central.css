@@ -1,0 +1,21 @@
+window {
+    margin: 10px;
+    border-radius: 0px;
+    padding: 4px 8px; 
+    background-color: #C9BCA1;
+    border: 3px solid #3F7A70;
+}
+
+button {
+    margin: 10px;
+    border-radius: 0px;
+    padding: 4px 8px; 
+    background-image: none;
+    background-color: #6b665b;
+    border: 1px solid #a83b23;
+    color: #3F7A70;
+}
+
+button:hover {
+    opacity: 0.8;
+}

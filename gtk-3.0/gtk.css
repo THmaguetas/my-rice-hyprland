@@ -1,0 +1,25 @@
+/* =========================
+   HICE BASE – SAFE MODE
+   ========================= */
+
+/* quadrado, mas sem cor */
+* {
+    border-radius: 0px;
+}
+
+/* botões: só geometria */
+button {
+    border-width: 1px;
+}
+
+/* entradas: só geometria */
+entry,
+textview {
+    border-width: 1px;
+}
+
+/* scrollbar discreta */
+scrollbar slider {
+    min-width: 8px;
+    min-height: 8px;
+}

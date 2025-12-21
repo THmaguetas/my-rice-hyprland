@@ -1,0 +1,77 @@
+* {
+    border-radius: 0px;
+    font-size: 11pt;
+    color: #000000;
+}
+
+/* Janela principal do Nemo */
+window {
+    background-color: #C9BCA1;
+}
+
+/* Headerbar / toolbar */
+headerbar,
+.toolbar,
+.primary-toolbar {
+    background-color: #C9BCA1;
+    border-bottom: 2px solid #a83b23;
+}
+
+/* Área de arquivos */
+.view,
+treeview,
+iconview {
+    background-color: #C9BCA1;
+}
+
+/* Barra lateral */
+.sidebar,
+.places-sidebar,
+placessidebar {
+    background-color: #C9BCA1;
+    border-right: 2px solid #a83b23;
+}
+
+/* Botões */
+button {
+    background-color: #C9BCA1;
+    border: 2px solid #3F7A70;
+    padding: 4px 8px;
+}
+
+button:hover {
+    background-color: #3F7A70;
+}
+
+button:active {
+    background-color: #3F7A70;
+}
+
+
+
+/* Menus */
+menu,
+popover {
+    background-color: #C9BCA1;
+    border: 2px solid #3F7A70;
+}
+
+/* Texto sempre dinâmico */
+label,
+text,
+span {
+    background-color: transparent;
+}
+
+scrollbar slider {
+    background-color: #3F7A70;
+    min-width: 10px;
+}
+
+toolbar,
+.toolbar,
+.primary-toolbar {
+    background-color: #C9BCA1;
+    border-bottom: 2px solid #3F7A70;
+    border-top: 2px solid #3F7A70;
+}

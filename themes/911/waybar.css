@@ -1,0 +1,126 @@
+/* Fonte global */
+* {
+    font-size: 12px;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    min-height: 0;
+}
+
+
+/* Janela principal da Waybar */
+window#waybar {
+    margin: 10px;
+    border-radius: 0px;
+    padding: 4px 8px; 
+    background-color: #C9BCA1;
+    border: 2px solid #3F7A70;
+} 
+
+/* Workspaces */
+#workspaces,
+
+#workspaces button {
+    padding: 0 8px;
+    color: #221E18
+}
+
+#workspaces .active {
+    margin: 6px;
+    background-color: #B5A991;
+    border-radius: 0px;
+    border: 2px solid #3F7A70;
+    color: #a83b23
+}
+
+/*módulos */
+
+#custom-thhub{
+    margin: 6 8px;
+    background-color: #B5A991;
+    border: 2px solid #927339;
+    color: #a83b23
+}
+
+#custom-energia{
+    margin: 6 8px;
+    background-color: #B5A991;
+    border: 2px solid #927339;
+    color: #3F7A70
+}
+
+#custom-divisao {
+    color: #a83b23
+}
+
+#clock {
+    padding: 0 8px;
+    margin: 6px;
+    background-color: #B5A991;
+    border: 2px solid #a83b23;
+    border-radius: 0px;
+    color: #221E18
+}
+
+#pulseaudio {
+    padding: 0 8px;
+    margin: 6px;
+    background-color: #B5A991;
+    border: 2px solid #99680d;
+    border-radius: 0px;
+    color: #221E18
+}
+
+#cpu {
+    padding: 0 8px;
+    margin: 6px;
+    background-color: #B5A991;
+    border: 2px solid #3F7A70;
+    border-radius: 0px;
+    color: #221E18
+}
+
+#memory {
+    padding: 0 8px;
+    margin: 6px;
+    background-color: #B5A991;
+    border: 2px solid #a83b23;
+    border-radius: 0px;
+    color: #221E18
+}
+
+#network {
+    padding: 0 8px;
+    margin: 6px;
+    background-color: #B5A991;
+    border: 2px solid #5C4C37;
+    border-radius: 0px;
+    color: #221E18
+}
+
+#custom-musica {
+    color: #221E18
+}
+
+#divisao,
+
+#battery,
+
+#disk,
+
+#temperature,
+
+#tray,
+
+#custom-android, 
+
+#custom-pavucontrol,  
+
+#custom-android,
+
+#custom-pavucontrol,
+
+#network.disconnected, #pulseaudio.muted{
+    color: #ff2d2d
+}

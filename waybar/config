@@ -1,0 +1,145 @@
+{
+    "height": 15,
+    "spacing": 6,
+    "width": 1920,
+    "style": "~/.config/waybar/style.css",
+
+    "modules-left": ["custom/energia", "custom/thhub", "custom/divisao","hyprland/workspaces" , "custom/divisao", "custom/musica"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "network"],
+
+
+    
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "disable-scroll": false,
+        "disable-click": false
+    },
+
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d-%m-%Y}"
+    },
+
+
+    "cpu": {
+        "interval": 2,
+        "format": "CPU. {usage}%",
+        "on-click": "kitty -T btop -e btop",
+        "tooltip": false
+    },
+
+
+    "memory": {
+        "interval": 2,
+        "format": "RAM. {}%",
+        "on-click": "kitty -T btop -e btop"    
+    },
+
+
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["❄️", "🌡️", "🔥"]
+    },
+
+
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["🌑", "🌒", "🌓", "🌔", "🌕"]
+    },
+
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ⚡",
+        "format-plugged": "{capacity}% 🔌",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["🪫", "🔋", "🔋", "🔋", "🔋"]
+    },
+
+
+    "network": {
+        "interval": 10,
+        "format-wifi": "wifi",
+        "format-ethernet": "RJ-45",
+        "format-linked": "linked",
+        "format-disconnected": "tá sem net essa porra",
+        "tooltip-format": "{ifname} via {gwaddr} ({ipaddr})"
+    },
+
+
+    "pulseaudio": {
+        "format": "Vol. {volume}%",               
+        "format-bluetooth": "Vol. {volume}%",
+        "format-source": "Vol. {volume}%",    
+        "format-muted": "Vol. muted",        
+        "format-bluetooth-muted": "Vol. muted",     
+        "format-source-muted": "Vol. muted",         
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+        "scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+    },
+
+
+    "custom/media": {
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "🎜",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
+    },
+
+    "custom/pavucontrol": {
+        "format": "🎜",
+        "tooltip": false,
+        "on-click": "pavucontrol"
+    },
+
+
+    "custom/divisao": {
+        "exec": "echo •",
+        "format": {}
+    },
+
+    "custom/musica": {
+    "exec": "~/.config/waybar/mods/musica.sh",
+    "interval": 2,
+    "format": "{}"
+    },
+
+    "custom/android": {
+        "format": "☎︎",
+        "tooltip": "Waydroid",
+        "on-click": "waydroid show-full-ui"
+    },
+
+    "custom/thhub": {
+        "format": " Th ",
+        "on-click": "kitty -e python3 /home/th/.config/Hypr_rice-th/TH_controle/thcentral/main.py"
+    },
+
+    "custom/energia": {
+        "format": " ⏻ ",
+        "on-click": "python3 /home/th/.config/Hypr_rice-th/TH_controle/gerenciador_de_energia/central_de_controle.py"
+    },
+
+    "group/modulos": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "cpu",
+            "memory",
+            "network"
+        ]
+    }
+}

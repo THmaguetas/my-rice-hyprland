@@ -1,0 +1,99 @@
+* {
+    font-family: "Segoe UI", "Noto Sans", sans-serif;
+    font-size: 10.5pt;
+}
+
+window {
+    background-color: #F0F0F0;
+    color: #000000;
+}
+
+headerbar,
+.toolbar {
+    background: linear-gradient(
+        to bottom,
+        #EAF2FB,
+        #D6E6F7
+    );
+    border-bottom: 1px solid #A9C4E2;
+}
+
+button {
+    background: linear-gradient(
+        to bottom,
+        #FFFFFF,
+        #E6E6E6
+    );
+    border: 1px solid #A0A0A0;
+    border-radius: 3px;
+    padding: 4px 8px;
+    color: #000000;
+}
+
+button:hover {
+    background: linear-gradient(
+        to bottom,
+        #F2F8FF,
+        #DCEBFF
+    );
+    border-color: #7DA2CE;
+}
+
+button:active {
+    background: linear-gradient(
+        to bottom,
+        #DCEBFF,
+        #C4DBF7
+    );
+}
+
+.nemo-window .sidebar,
+.sidebar {
+    background-color: #F7F9FC;
+    border-right: 1px solid #B6CBE6;
+}
+
+.sidebar row {
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.sidebar row:selected {
+    background: linear-gradient(
+        to bottom,
+        #CDE6FF,
+        #99C9FF
+    );
+    color: #000000;
+}
+
+.nemo-canvas-item {
+    border-radius: 3px;
+}
+
+.nemo-canvas-item:selected {
+    background-color: #3399FF;
+    color: #FFFFFF;
+}
+
+.nemo-canvas-item:selected:focus {
+    background-color: #2A7FDB;
+}
+
+statusbar {
+    background-color: #E6EEF8;
+    border-top: 1px solid #A9C4E2;
+}
+
+scrollbar slider {
+    background-color: #C2D7EE;
+    border-radius: 6px;
+}
+
+scrollbar slider:hover {
+    background-color: #AFC9E8;
+}
+
+separator {
+    background-color: #B6CBE6;
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    
+  "logo": {
+    "source": "$HOME/.config/fastfetch/imagem/goldenapple.png",
+    "width": 18,
+    "height": 8
+  },
+
+    "display": {
+        "separator": "  "
+    },
+    "modules": [
+    "break",
+    "title",
+        {
+            "type": "os",
+            "key": " OS ",
+            "keyColor": "33"
+        },
+        {
+            "type": "kernel",
+            "key": " KNL",
+            "keyColor": "33"
+        },
+        {
+            "type": "wm",
+            "key": " WM ",
+            "keyColor": "33"
+        },
+        {
+            "type": "packages",
+            "format": "{}",
+            "key": "󰏖 PKG",
+            "keyColor": "33" 
+        },
+        {
+            "type": "uptime",
+            "format": "{2}h {3}m",
+            "key": " UP ",
+            "keyColor": "33"
+        },
+        {
+            "type": "memory",
+            "key": " MEM",
+            "keyColor": "33"
+        },
+        "break"
+    ]
+}

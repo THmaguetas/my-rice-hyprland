@@ -1,0 +1,27 @@
+# modo (dmenu = lista simples, run = launcher de apps, drun = apps desktop files)
+mode=drun
+
+# largura e altura (0 = automático)
+width=400
+height=600
+
+# prompt que aparece no topo
+prompt=cu...
+
+# mostrar ícones
+show=drun
+
+# case-insensitive search
+case-sensitive=false
+
+# mostra ícones de apps
+show-icons=true
+
+# ciclo de seleção com Tab
+allow-images=true
+
+# não fechar ao clicar fora
+allow-unsafe-quit=false
+
+
+location=top-left
